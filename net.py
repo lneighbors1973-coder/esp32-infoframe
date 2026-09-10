@@ -1,4 +1,4 @@
-# Wi-Fi, NTP and weather for the photo frame. All failures are non-fatal.
+# Wi-Fi, NTP and weather for the info frame. All failures are non-fatal.
 import network, time, gc
 
 LAT, LON = 38.88, -94.82          # Olathe, KS (66062)
