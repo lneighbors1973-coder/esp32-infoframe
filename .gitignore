@@ -1,0 +1,22 @@
+# Wi-Fi credentials. Both copies: the one deployed to the board and the one
+# pulled back off it into backup/device/. A bare filename matches at any depth.
+secrets.py
+
+# Precompiled bytecode. The deploy loop builds these with mpy-cross and deletes
+# them again; see photoframe-deploy in memory.
+*.mpy
+
+# Firmware and whole-flash images - ~9.8 MB of binaries that never change and
+# that git handles badly:
+#   factory_backup_4MB.bin              original flash dump, IRREPLACEABLE
+#   backup/micropython_1290_with_fs.bin pre-change dump w/ filesystem
+#   backup/firmware/*.bin               the custom v1.29.0 build
+# Keep these backed up OFF this machine. Git is not protecting them.
+*.bin
+
+# The board's own markets log, when freshly pulled. The captured copy in
+# backup/device/ is kept on purpose - it is evidence from the TLS hunt.
+/markets.log
+
+# Machine-local Claude Code settings.
+.claude/settings.local.json

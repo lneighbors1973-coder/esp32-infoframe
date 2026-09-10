@@ -1,0 +1,7 @@
+09/09 19:00 boot idf=25008 gc=77136
+09/09 19:03 boot idf=25044 gc=77104
+09/09 19:03 boot idf=25004 gc=77136
+09/09 19:04 boot idf=24996 gc=77136
+09/09 19:05 boot idf=25016 gc=75440
+09/09 19:06 boot idf=25008 gc=77280
+09/09 19:09 FAIL idf=24828 6ms at=done [dns=23 tcp=70] wait=1800 guard or no quote

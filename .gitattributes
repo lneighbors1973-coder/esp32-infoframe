@@ -1,0 +1,4 @@
+# Device source goes to the board as-is. Keep LF everywhere; Windows
+# checkout must not rewrite these to CRLF.
+* text=auto eol=lf
+*.bin binary
