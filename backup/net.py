@@ -1,7 +1,7 @@
 # Wi-Fi, NTP and weather for the photo frame. All failures are non-fatal.
 import network, time, gc
 
-LAT, LON = 38.88, -94.82          # Olathe, KS (66062)
+LAT, LON = 38.88, -94.82               # Olathe, KS (66062)
 # Plain HTTP on purpose: mbedTLS needs ~34 KB of heap that main.py does not
 # have spare (MBEDTLS_ERR_MD_ALLOC_FAILED). No credentials are sent and the
 # payload is public weather data, so the only exposure is LAN-level spoofing.

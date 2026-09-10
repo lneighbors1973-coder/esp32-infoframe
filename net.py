@@ -1,7 +1,10 @@
 # Wi-Fi, NTP and weather for the info frame. All failures are non-fatal.
 import network, time, gc
 
-LAT, LON = 38.88, -94.82          # Olathe, KS (66062)
+LAT, LON = 38.88, -94.82               # Olathe, KS (66062). Two decimals on
+                                       # purpose: this repo is public, and ~1 km
+                                       # is finer than the forecast grid anyway.
+                                       # Do not restore the precise fix.
 # Plain HTTP on purpose. HTTPS does fit on the custom firmware this board
 # runs, but weather and scores are happy on port 80, and each avoided
 # handshake saves a second of latency and a scarce contiguous block. No credentials are sent and the payload is
