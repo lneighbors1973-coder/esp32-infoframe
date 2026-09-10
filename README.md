@@ -206,7 +206,7 @@ Every module ships as precompiled bytecode; only `main.py` stays as source so
 MicroPython auto-runs it.
 
 ```bash
-cd C:/Users/lneig/Documents/photoframe && for f in tile sports net markets frame ili9341 xpt2046; do uvx mpy-cross -o "$f.mpy" "$f.py" && uvx mpremote connect COM3 fs cp "$f.mpy" ":$f.mpy"; done && uvx mpremote connect COM3 fs cp main.py : && rm -f *.mpy
+for f in tile sports net markets frame ili9341 xpt2046; do uvx mpy-cross -o "$f.mpy" "$f.py" && uvx mpremote connect COM3 fs cp "$f.mpy" ":$f.mpy"; done && uvx mpremote connect COM3 fs cp main.py : && rm -f *.mpy
 ```
 
 Wi-Fi credentials are not in this repo:
